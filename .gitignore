@@ -1,0 +1,12 @@
+# Rust build artifacts
+/target/
+Cargo.lock
+
+# Lean build artifacts
+**/lean/.lake/
+**/.lake/
+lean/.lake/
+
+# OS/IDE metadata
+.DS_Store
+.vscode/

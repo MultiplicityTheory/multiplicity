@@ -1,0 +1,10 @@
+{
+  "name": "core",
+  "primes": [2, 3],
+  "sequence": 1,
+  "signature": "AUTHORIZED_SCHEMA_SIG",
+  "proof_hash": "LEAN_PROOF_HASH_108_CORE",
+  "layer_witness": "L1_AUDIT_PASS",
+  "constitutional_witness": "L3_CONSTITUTIONAL_PASS",
+  "mtpi_witness": "MTPI_VALID"
+}

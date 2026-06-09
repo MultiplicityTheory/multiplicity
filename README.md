@@ -1,4 +1,4 @@
-# MOC v2: Lean Core + Lisp Frontend
+Multiplicity: PIRTM/MOC - Lean Core + Lisp Frontend
 
 This is the port of Multiplicity Operator Calculus (MOC) from version 1 (Python) to a formally verified Lean core with an ergonomic Lisp macro frontend.
 

@@ -1,6 +1,6 @@
-   Multiplicity Operator Calculus: Prime-Indexed
-              Dynamics on Hypergraphs
-Institute for Mathematical Discovery1 and Citizen Gardens Research Initiative2
+                  Multiplicity Operator Calculus: Prime-Indexed
+                           Dynamics on Hypergraphs
+                    Citizen Gardens & The Prime Materia Commons
 
                        1 Department of Mathematical Philosophy
 

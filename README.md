@@ -1,5 +1,5 @@
-Multiplicity Operator Calculus: Axiom-Clean Lawful Core
-
+# Multiplicity-Clean Lawful Core
+ 
 The Multiplicity Operator Calculus (MOC) is now implemented in a formally verified, axiom-clean Lean 4 core, satisfying the binding requirements of the `Ξ-Constitution`.
 
 ## Architecture

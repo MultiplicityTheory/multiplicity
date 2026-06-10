@@ -44,15 +44,8 @@ def resonanceGatedUpdate
   (mtpi : MTPIWitness state.config)
   : Option (CRMFState {s := vs.schema} {last_seq := last_seq} {v := vs} {n := n} × PIRTM.StabilityCertificate vs) :=
   let nf := MOC.N state.config
-  -- Constructing certificate requires a proof of dominance, using sorry here for structural completeness
-  let new_cert : PIRTM.StabilityCertificate vs := {
-      transition := sorry,
-      ace_bound := 0.6,
-      r_bound := {r1 := 0.9, r3 := 0.5, h_r1 := by decide, h_r3 := by decide},
-      is_contractive := by simp,
-      is_ace_dominant := by trivial
-  }
-  if boundary.is_sovereign (sorry) (new_cert) ∧ state.resonanceScore >= 0.5 ∧ mtpi.witness == "MTPI_VALID" then
+  let new_cert : PIRTM.StabilityCertificate vs := MOC.stability_108_cycle
+  if boundary.is_sovereign (new_cert) ∧ state.resonanceScore >= 0.5 ∧ mtpi.witness == "MTPI_VALID" then
     some (state, new_cert) 
   else
     none

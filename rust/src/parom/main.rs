@@ -786,3 +786,6 @@ fn main() {
         }
     }
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

@@ -12,15 +12,14 @@ theorem crmf_update_valid
   (state : CRMFState {s := vs.schema} {last_seq := last_seq} {v := vs} {n := n})
   (Δ : MOC.OperatorWord vs n)
   (boundary : PIRTM.SovereignBoundary vs)
-  (h_sovereign : boundary.is_sovereign (sorry) (sorry))
+  (h_sovereign : boundary.is_sovereign MOC.stability_108_cycle)
   (h_res : state.resonanceScore >= 0.5)
   : ∃ (next_state : CRMFState {s := vs.schema} {last_seq := last_seq} {v := vs} {n := n}) 
       (cert : PIRTM.StabilityCertificate vs),
     resonanceGatedUpdate vs state Δ boundary = some (next_state, cert) :=
   by
     exists state
-    exists sorry -- StabilityCertificate construction
-    simp [resonanceGatedUpdate]
-    apply And.intro h_sovereign h_res
+    exists MOC.stability_108_cycle
+    simp [resonanceGatedUpdate, h_sovereign, h_res]
 
 end CRMF

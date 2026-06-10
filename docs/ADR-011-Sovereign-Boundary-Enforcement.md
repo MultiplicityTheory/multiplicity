@@ -26,3 +26,5 @@ All PIRTM transitions must be executed within an explicitly defined `SovereignBo
 ## Verification
 - Admissibility of a transition is a type-checking failure if the sovereign invariants are not met.
 - No drift possible between mathematical model and deployment.
+
+<!-- LawfulRecursionVersion:1.0 -->

@@ -102,3 +102,5 @@ security:
     X-Content-Type-Options: nosniff
     X-Frame-Options: DENY
     Content-Security-Policy: "default-src 'self'"
+
+<!-- LawfulRecursionVersion:1.0 -->

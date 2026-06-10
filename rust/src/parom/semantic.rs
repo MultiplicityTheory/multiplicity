@@ -181,3 +181,6 @@ mod tests {
         assert_eq!(x.p, 15);
     }
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

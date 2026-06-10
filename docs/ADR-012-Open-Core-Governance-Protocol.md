@@ -26,3 +26,5 @@ We enforce a strict separation between the **Open Core** (the formal generator l
 - Formal proof `crmf_governance_bound` ensures no governance decision can be made without an underlying core stability proof.
 - CI/CD pipeline enforces attestation chain (Core Cert + Layer Cert) for all production binary deployment.
 - Runtime PEP (Policy Enforcement Point) rejects any execution lacking the full attestation chain.
+
+<!-- LawfulRecursionVersion:1.0 -->

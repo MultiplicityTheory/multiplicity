@@ -94,3 +94,6 @@ impl HypermutationEngine {
         if count > 0 { total_mse / count as f64 } else { 0.0 }
     }
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

@@ -23,3 +23,5 @@ All Rust-based PIRTM runtime artifacts must embed a `ProofHash` constant and enf
 - CI/CD build scripts enforce that the binary is only compiled if the attestation file is present.
 - Rust runtimes without matching embedded `ProofHash` and manifest data are rejected at the runtime gate.
 - PIRTM transition integrity is guaranteed by the chain: Lean Proof $\to$ Bridge Attestation $\to$ Compiled Binary $\to$ Runtime Hash-Verify.
+
+<!-- LawfulRecursionVersion:1.0 -->

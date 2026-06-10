@@ -80,3 +80,6 @@ pub fn run_synthetic_benchmark(dimension: usize, steps: usize) -> BenchmarkResul
         dense_time_ms: dense_time,
     }
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

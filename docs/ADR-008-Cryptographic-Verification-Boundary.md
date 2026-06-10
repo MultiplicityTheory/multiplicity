@@ -54,3 +54,5 @@ The `Justfile` test-structural target and the Rust-based enclave simulation will
 1. Unsigned or self-signed schemas are rejected by `moc-verifier`.
 2. Schemas with non-increasing sequence numbers are rejected by `moc-verifier`.
 3. Only authorized threshold signatures allow `moc-bridge` to emit Lean AST.
+
+<!-- LawfulRecursionVersion:1.0 -->

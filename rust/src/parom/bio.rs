@@ -74,3 +74,6 @@ pub fn run_bio_benchmark(steps: usize) -> (f64, f64) {
     
     (parom_mse, dense_mse)
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

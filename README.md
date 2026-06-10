@@ -1,44 +1,29 @@
-Multiplicity: PIRTM/MOC - Lean Core + Lisp Frontend
+# MOC v2: Axiom-Clean Lawful Core
 
-This is the port of Multiplicity Operator Calculus (MOC) from version 1 (Python) to a formally verified Lean core with an ergonomic Lisp macro frontend.
+The Multiplicity Operator Calculus (MOC) is now implemented in a formally verified, axiom-clean Lean 4 core, satisfying the binding requirements of the `Ξ-Constitution`.
 
-## Directory Structure
+## Architecture
 
-- `lean/`: Lean 4 core specification and proofs.
-  - `MOC/Core.lean`: Basic types and operator definitions.
-  - `MOC/Resonance.lean`: Resonance components and aggregation logic.
-  - `PIRTM/Default.lean`: Transition models and stability levels.
-  - `Proofs.lean`: Formal proof targets for MOC/PIRTM logic.
-- `lisp/`: Common Lisp macros for generating MOC words.
-  - `moc.lisp`: Main macro and function definitions.
-- `bridge/`: Interop between Lisp and Lean.
-  - `sexpr_to_lean.py`: Converts Lisp S-expressions to Lean operator words.
-- `docs/`: Documentation (linked from root).
-- `Justfile`: Automation for bridge and testing.
+- **`lean/`**: The canonical, axiom-clean lawful core.
+  - **`MOC/Core.lean`**: Axiom-clean operator calculus and stability predicates (No Mathlib, No Sorry).
+  - **`PIRTM/Transition/`**: Anchored transition models and verified stability certificates.
+  - **`legacy/`**: Exploratory/theatrical modules dependent on Mathlib (Non-binding, non-production).
+- **`bridge/`**: S-expression bridge connecting Lisp macros to the certified core.
 
 ## Getting Started
 
-### Prerequisites
-
-- [Lean 4](https://lean-lang.org/) and `lake`.
-- Python 3 (for the bridge).
-- A Common Lisp environment (optional, for the frontend).
-
-### Workflow
-
-1. **Compose** a MOC word in Lisp:
-   ```lisp
-   (moc-108-cycle :w0 1.2)
-   ```
-2. **Translate** to Lean using the bridge:
+1. **Build the Lawful Core:**
    ```bash
-   just bridge "((subdivision 3 3) (subdivision 2 2) (accent 27 1.2 0))"
+   cd lean && lake build
    ```
-3. **Verify** in Lean:
-   ```bash
-   just run-lean
-   ```
+2. **Verify Stability:**
+   All production paths anchor to verified `StabilityCertificate` objects in the lawful core.
 
-## Roadmap
+## Governance & Compliance
 
-See `MOC_LEAN_LISP_ROADMAP.md` in the root for the full implementation plan.
+- **Binding Source:** `lean/MOC/Core.lean` and `lean/PIRTM/Transition/` are the **single, binding, axiom-clean source of truth**. 
+- **Legacy Status:** Code in `lean/legacy/` does not constitute constitutional law and must not be used for production stability proofs.
+- **Constitutional Core:** All system evolutions must comply with the `Ξ-Constitution`.
+
+<!-- LawfulRecursionVersion:1.0 -->
+

@@ -184,3 +184,5 @@ Would you like the next step to be a concrete 30/60/90-day implementation roadma
 
 [^23]: https://arxiv.org/html/2506.08321v2
 
+
+<!-- LawfulRecursionVersion:1.0 -->

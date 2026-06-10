@@ -25,3 +25,5 @@ We implement a formal extraction bridge that binds every Rust executable artifac
 - Lean specification is the sole source of truth for PIRTM stability.
 - Rust execution is cryptographically and formally linked to the Lean stability certificate (ACE compliance + Resonance Bound).
 - Any runtime transition not traceable to a Lean-proved `ProofHash` triggers an immediate shutdown.
+
+<!-- LawfulRecursionVersion:1.0 -->

@@ -101,3 +101,5 @@ Work is sequenced according to `NEXT_STEPS.md`. Do not start a later step until 
 ### Escalation protocol
 
 When you encounter a conflict between a requested task and a governance invariant, use this format and stop:
+
+<!-- LawfulRecursionVersion:1.0 -->

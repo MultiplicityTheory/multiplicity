@@ -16,7 +16,7 @@ struct Cli {
 
 fn call_verifier(schema_json: &str, last_seq: u64) -> Result<String> {
     // Hardcoded absolute path for stability within the workspace
-    let verifier_path = "/home/multiplicity/moc_v2/target/debug/moc-verifier";
+    let verifier_path = "/home/multiplicity/multiplicity/target/debug/moc-verifier";
     
     let mut child = Command::new(verifier_path)
         .arg("--last-seq")
@@ -102,7 +102,7 @@ fn main() -> Result<()> {
         "pub const PROOF_HASH: &str = \"{}\";\n",
         proof_hash
     );
-    std::fs::write("src/proof_attestation.rs", attestation_code)?;
+    std::fs::write("rust/src/proof_attestation.rs", attestation_code)?;
     
     // 3. Parse and Translate
     let val = lexpr::from_str(&args.sexpr)?;
@@ -112,3 +112,5 @@ fn main() -> Result<()> {
     
     Ok(())
 }
+
+// LawfulRecursionVersion:1.0

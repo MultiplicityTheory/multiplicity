@@ -569,3 +569,6 @@ pub fn run_c4_ablation() {
         .expect("Failed to write c4_results.json");
     println!("Results successfully written to c4_results.json.");
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

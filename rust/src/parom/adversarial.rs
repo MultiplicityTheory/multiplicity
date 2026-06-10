@@ -100,3 +100,6 @@ pub fn run_adversarial_test(config: StressTestConfig) -> StressTestResult {
         dense_violations: d_viols,
     }
 }
+
+// LawfulRecursionVersion:1.0
+// LawfulRecursionVersion:1.0

@@ -17,3 +17,5 @@ The structural refactoring addresses the single-horizon perimeter trust vulnerab
 - [ADR-008: Isolation of the Cryptographic Verification Boundary](ADR-008-Cryptographic-Verification-Boundary.md)
 - [MOC Core Invariants (Lean 4)](../lean/MOC/Core.lean)
 - [Bridge Gating Logic (Python)](../bridge/sexpr_to_lean.py)
+
+<!-- LawfulRecursionVersion:1.0 -->

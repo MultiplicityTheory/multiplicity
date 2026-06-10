@@ -30,3 +30,5 @@ The CI/Justfile pipeline requires a numerical resonance check (`tests/numerical_
 - **Security:** Absolute auditability of the prime-indexed transition matrix.
 - **Reliability:** Zero-drift convergence metrics enforced by the pipeline.
 - **Velocity:** Potential minor friction in CI due to increased verification rigour, offset by reduced runtime failures.
+
+<!-- LawfulRecursionVersion:1.0 -->
